@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
 
+This is a project to showcase my portfolio while also using modern web development frameworks. It is created with Angular, Bootstrap5, HTML, and SCSS.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
