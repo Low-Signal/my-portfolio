@@ -1,0 +1,32 @@
+a {
+    font-size: large;
+    color: white;
+}
+
+ul {
+    margin: 10px
+}
+
+li {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .active {
+        background-color: darkgrey;
+        font-weight: bold !important;
+        color: rgb(0, 0, 0) !important;
+        font-size: 1.2rem !important;
+        transition-duration: 0.3s;
+    }
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .navbar-collapse {
+        text-align: center;
+    }
+}
