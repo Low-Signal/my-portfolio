@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./education.component.scss']
 })
 export class EducationComponent {
-
+  fsuImage: string = "../assets/FSUCS.png";
 }
