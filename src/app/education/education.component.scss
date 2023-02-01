@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: url('fsutransparent.png');
     background-size: 100% 100%;
@@ -14,7 +14,8 @@ body {
 
 .blocktext {
     width: 75%;
-    padding: 10rem;
+    padding: 5rem;
+    margin: 1rem;
     //margin: 10px auto;
     border-style: solid;
     border-width: .5rem;
@@ -22,13 +23,38 @@ body {
     background-color: #782F40;
 }
 
-img {
-    width: 20rem;
+.fsu-logo {
+    width: 25rem;
     height: 10rem;
+}
+
+.arrow-div {
+    margin-top: -1rem;
+    width: 17rem;
+    height: 3rem;
+}
+
+// hr {
+//     color: white;
+//     width: 50%;
+//     line-height: ;
+// }
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
 }
 
 p {
     color: white;
     font-size: large;
     font-weight: bold;
+}
+
+.row {
 }
