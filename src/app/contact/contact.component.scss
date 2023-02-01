@@ -1,5 +1,39 @@
 body {
     width: auto;
+    padding-top: 2rem;
     height: 100vh;
+    background-color: lightgrey;
+}
+
+.header-container {
+    width: 75%;
+    margin: auto;
+    background-color: royalblue;
+    padding: 2rem;
+    border-radius: 1rem;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+hr {
+    height: 12px;
+    background: black;
+}
+
+.contact-box {
+    width: 33%;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 3rem;
     background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
 }

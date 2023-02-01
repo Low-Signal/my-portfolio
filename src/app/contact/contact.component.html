@@ -1,3 +1,20 @@
 <body>
-    <p>contact works!</p>
+    <div class="header-container">
+        <h1>Contact Me</h1>
+        <hr/>
+    </div>
+
+        <div class="contact-box">
+            <form action="https://formsubmit.co/daimeun@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_webhook" value="http://localhost:4200/">
+
+                <input type="text" name="name" placeholder="Enter your name." required>
+                <input type="email" name="email" placeholder="Enter your email address">
+                <textarea type="message" name="message" placeholder="Write your message here." required></textarea>
+                <button type="submit">Send</button>
+           </form>
+
+        </div>
 </body>
