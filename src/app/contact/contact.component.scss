@@ -1,33 +1,30 @@
 body {
     width: auto;
     padding-top: 2rem;
-    height: 100vh;
+    padding-bottom: 2rem;
+    height: auto;
     background-color: lightgrey;
 }
 
-.header-container {
-    width: 75%;
-    margin: auto;
-    background-color: royalblue;
-    padding: 2rem;
-    border-radius: 1rem;
-    filter: drop-shadow(0 0 0.75rem black);
-}
+// .header-container {
+//     width: 75%;
+//     margin: auto;
+//     background-color: royalblue;
+//     padding: 2rem;
+//     border-radius: 1rem;
+//     filter: drop-shadow(0 0 0.75rem black);
+// }
 
 h1 {
     text-align: center;
-    color: white;
-}
-
-hr {
-    height: 12px;
-    background: black;
+    color: rgb(0, 0, 0);
 }
 
 .contact-box {
-    width: 33%;
+    width: 50%;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     padding: 3rem;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
@@ -36,4 +33,9 @@ hr {
 .form {
     display: flex;
     flex-direction: column;
+}
+
+.row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
