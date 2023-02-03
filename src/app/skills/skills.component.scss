@@ -2,26 +2,21 @@ body {
     width: auto;
     height: auto;
     background-color: #EAEAEA;
+    padding-bottom: 3rem;
 }
 
-ul {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    margin: auto;
-    list-style-type: none;
-
-    li {
-        //border-style: solid;
-        //border-color: white;
-        //background-color: grey;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        border-radius: 5px;
-    }
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
+.col-md-5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
 
 .child {
     display: inline-block;
