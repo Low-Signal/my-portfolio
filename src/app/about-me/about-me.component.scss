@@ -1,8 +1,10 @@
 body {
     width: auto;
-    height: 100vh;
-    background-color: rgb(57, 217, 246);
-    margin-top: 3.6rem;    
+    height: auto;
+    background-color: #EAEAEA;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    margin-top: 3.6rem;
 }
 
 img {
@@ -23,4 +25,8 @@ hr {
     background-color: #000000;
     opacity: 1;
     border: 0 none;
+  }
+
+  .section {
+    padding-top: 4rem;
   }
