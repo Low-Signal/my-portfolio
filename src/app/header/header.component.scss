@@ -17,7 +17,6 @@ li {
         font-weight: bold !important;
         color: #00ABB3 !important;
         font-size: 1.3rem !important;
-        //transition-duration: 0.3s;
     }
 }
 
@@ -27,6 +26,7 @@ li {
     position: fixed;
     top: 0;
     width: 100%;
+    height: auto;
 
     .navbar-collapse {
         text-align: center;
