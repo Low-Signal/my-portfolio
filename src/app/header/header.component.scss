@@ -1,6 +1,7 @@
 a {
     font-size: large;
-    color: white;
+    color: #3C4048;
+    font-weight: 600;
 }
 
 ul {
@@ -12,15 +13,16 @@ li {
     margin-right: 10px;
 
     .active {
-        background-color: darkgrey;
+        background-color: white;
         font-weight: bold !important;
-        color: rgb(0, 0, 0) !important;
-        font-size: 1.2rem !important;
-        transition-duration: 0.3s;
+        color: #00ABB3 !important;
+        font-size: 1.3rem !important;
+        //transition-duration: 0.3s;
     }
 }
 
 .navbar {
+    background-color: white;
     overflow: hidden;
     position: fixed;
     top: 0;
