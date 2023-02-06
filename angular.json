@@ -27,6 +27,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
+              "favicon.png",
               "src/assets"
             ],
             "styles": [
