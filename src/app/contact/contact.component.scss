@@ -1,23 +1,14 @@
 body {
     width: auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     height: auto;
-    background-color: white;
+    background-color: #EAEAEA;
 }
-
-// .header-container {
-//     width: 75%;
-//     margin: auto;
-//     background-color: royalblue;
-//     padding: 2rem;
-//     border-radius: 1rem;
-//     filter: drop-shadow(0 0 0.75rem black);
-// }
 
 h1 {
     text-align: center;
-    color: #3C4048;
+    color: black;
 }
 
 .contact-box {
@@ -26,7 +17,7 @@ h1 {
     margin-top: 10rem;
     margin-bottom: 10rem;
     padding: 3rem;
-    background-color: #EAEAEA;
+    background-color: white;
     border-radius: 5px;
 }
 
@@ -38,4 +29,22 @@ h1 {
 .row {
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.button1 {
+    background-color: #3C4048;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .contact-box {
+        width: 90%;
+    }
 }
