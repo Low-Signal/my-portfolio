@@ -1,6 +1,6 @@
 a {
     font-size: large;
-    color: #3C4048;
+    color: black;
     font-weight: 600;
 }
 
@@ -15,7 +15,7 @@ li {
     .active {
         background-color: white;
         font-weight: bold !important;
-        color: #00ABB3 !important;
+        color: #2178cf !important;
         font-size: 1.3rem !important;
     }
 }
@@ -32,3 +32,15 @@ li {
         text-align: center;
     }
 }
+
+img {
+    height: auto;
+    width: 13rem;
+}
+
+@media screen and (max-width: 992px){
+    .col.make-invisible {
+        display: none;
+    }
+}
+

@@ -8,7 +8,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 })
 
 export class HeaderComponent {
+
+  myLogo: string = "../assets/DCP LOGO bold.png";
+
+  // Used to check if menu is collapsed
   isMenuCollapsed = true;
+
 
   public currentActive = 1; // Tracks the current active page
 
@@ -26,12 +31,10 @@ export class HeaderComponent {
       this.currentActive = 2;
     } else if (window.pageYOffset >= this.pageLocations.skillsOffset && window.pageYOffset < this.pageLocations.projectsOffset) {
       this.currentActive = 3;
-    } else if (window.pageYOffset >= this.pageLocations.projectsOffset && window.pageYOffset < this.pageLocations.experienceOffset) {
+    } else if (window.pageYOffset >= this.pageLocations.projectsOffset && window.pageYOffset < this.pageLocations.contactOffset) {
       this.currentActive = 4;
-    } else if (window.pageYOffset >= this.pageLocations.experienceOffset && window.pageYOffset < this.pageLocations.contactOffset) {
-      this.currentActive = 5;
     } else if (window.pageYOffset >= this.pageLocations.contactOffset) {
-      this.currentActive = 6;
+      this.currentActive = 5;
     } else {
       this.currentActive = 0;
     }

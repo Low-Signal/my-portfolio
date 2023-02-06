@@ -1,24 +1,26 @@
-
 <nav class="navbar sticky-top navbar-expand-lg nav-pills">
     <div class="container-fluid">
 
-        <div class="navbar-header">
-            <h1 href="#" class="navbar-brand">Logo</h1>
+        <div class="col navbar-header">
+            <a href="#scrollToAboutme"><img class="m-auto" [src]=myLogo alt="No Image"></a>
         </div>
 
         <button class="navbar-toggler" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+        
         <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item"><a href="#scrollToAboutme" [ngClass]="{'active': currentActive === 1}" class="nav-link" (click)="isMenuCollapsed = true">About Me</a></li>
                 <li class="nav-item"><a href="#scrollToEducation" [ngClass]="{'active': currentActive === 2}" class="nav-link" (click)="isMenuCollapsed = true">Education</a></li>
                 <li class="nav-item"><a href="#scrollToSkills" [ngClass]="{'active': currentActive === 3}" class="nav-link" (click)="isMenuCollapsed = true">Skills</a></li>
                 <li class="nav-item"><a href="#scrollToProjects" [ngClass]="{'active': currentActive === 4}" class="nav-link" (click)="isMenuCollapsed = true">Projects</a></li>
-                <li class="nav-item"><a href="#scrollToExperience" [ngClass]="{'active': currentActive === 5}" class="nav-link" (click)="isMenuCollapsed = true">Experience</a></li>
-                <li class="nav-item"><a href="#scrollToContact" [ngClass]="{'active': currentActive === 6}" class="nav-link" (click)="isMenuCollapsed = true">Contact</a></li>
+                <li class="nav-item"><a href="#scrollToContact" [ngClass]="{'active': currentActive === 5}" class="nav-link" (click)="isMenuCollapsed = true">Contact</a></li>
             </ul>
+        </div>
+
+        <!-- Used to center navigation on full screen, goes invisible when hamburger is shown -->
+        <div class="col make-invisible">
         </div>
     </div>
 </nav>
