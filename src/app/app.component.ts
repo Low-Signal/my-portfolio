@@ -11,11 +11,11 @@ export class AppComponent implements AfterViewInit {
   // Holds all page locations to be sent to the header for highlighting on scroll
   public pageLocations = {aboutMeOffset: null, educationOffset: null, skillsOffset: null, projectsOffset: null, experienceOffset: null, contactOffset: null };
 
+  //Gets the element reference object
   @ViewChild('aboutme') aboutMeElement: ElementRef;
   @ViewChild('education') educationElement: ElementRef;
   @ViewChild('skills') skillsElement: ElementRef;
   @ViewChild('projects') projectsElement: ElementRef;
-  @ViewChild('experience') experienceElement: ElementRef;
   @ViewChild('contact') contactElement: ElementRef;
 
   // Sets all page locations based on the Y value offset from top
@@ -24,7 +24,6 @@ export class AppComponent implements AfterViewInit {
     this.pageLocations.educationOffset = this.educationElement.nativeElement.offsetTop;
     this.pageLocations.skillsOffset = this.skillsElement.nativeElement.offsetTop;
     this.pageLocations.projectsOffset = this.projectsElement.nativeElement.offsetTop;
-    this.pageLocations.experienceOffset = this.experienceElement.nativeElement.offsetTop;
     this.pageLocations.contactOffset = this.contactElement.nativeElement.offsetTop;
   }
 }
