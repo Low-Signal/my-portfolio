@@ -1,9 +1,6 @@
 
 .row {
     margin: auto;
-    //margin-left: 20rem;
-    //margin-right:20rem;
-
 }
 
 .outer {
@@ -16,7 +13,7 @@ h5 {
     text-align: center;
     font-weight: 700;
     font-size: 4rem;
-    color: #3C4048;
+    color: black;
 }
 
 /* hr in cards */
@@ -32,8 +29,8 @@ hr {
 .hr2 {
     height: .3rem;
     border-style: solid;
-    color: #00ABB3;
-    background-color: #00ABB3;
+    color: #2178cf;
+    background-color: #2178cf;
     width: 45%;
     opacity: 1;
     border-radius: 5px;
@@ -47,8 +44,8 @@ hr {
 .hr3 {
     height: .3rem;
     border-style: solid;
-    color: #00ABB3;
-    background-color: #00ABB3;
+    color: #2178cf;
+    background-color: #2178cf;
     width: 33%;
     opacity: 1;
     margin: auto;
@@ -78,7 +75,7 @@ body {
     background-color: transparent;
     position: relative;
     max-width: 30rem;
-    min-width: 25rem;
+    min-width: 18.5rem;
 }
 
 /* setting padding based on even or odd */
@@ -95,14 +92,14 @@ body {
     content: "";
     position: absolute;
     width: 50%;
-    border: solid #00ABB3;
+    border: solid #2178cf;
 }
 
 /* Setting the border of top, bottom, left */
 .card:nth-child(odd)::before {
     left: 0px;
-    top: -5px;
-    bottom: -5px;
+    top: -0.3rem;
+    bottom: -0.3rem;
     border-width: 5px 0 5px 5px;
     border-radius: 50px 0 0 50px;
 }
@@ -119,12 +116,6 @@ body {
 /* Removing the border if it is the first card */
 .card:first-child::before {
     border-top-left-radius: 0 4.5rem 4.5rem 0;
-}
-
-/* Removing the border if it is the last card  and it's odd */
-.card:last-child:nth-child(odd)::before {
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
 }
 
 /* Removing the border if it is the last card  and it's even */
@@ -145,7 +136,7 @@ body {
 
 /* Title of the card */
 .title {
-    color: #00ABB3;
+    color: #2178cf;
     position: relative;
 }
 
@@ -157,7 +148,7 @@ body {
     height: 1.2rem;
     background: white;
     border-radius: 100rem;
-    border: 0.3rem solid #00ABB3;
+    border: 0.3rem solid #2178cf;
 }
 
 /* title right if the card is even  */
@@ -177,12 +168,12 @@ body {
 
 /* setting dot to the left if the card is odd */
 .card:nth-child(odd) > .info > .title::before {
-    left: -3rem;
+    left: -3.2rem;
 }
 
 /* setting dot to the right if the card is odd */
 .card:nth-child(even) > .info > .title::before {
-    right: -3rem;
+    right: -3.2rem;
 }
 /*--------------------------------------------------Card 2--------------------------------------------*\
 
@@ -198,7 +189,7 @@ body {
     background-color: transparent;
     position: relative;
     max-width: 30rem;
-    min-width: 25rem;
+    min-width: 18.5rem;
 }
 
 /* Global ::before */
@@ -206,7 +197,7 @@ body {
     content: "";
     position: absolute;
     width: 50%;
-    border: solid #00ABB3;
+    border: solid #2178cf;
 }
 
 /* setting padding based on even or odd */
@@ -220,8 +211,8 @@ body {
 /* Setting the border of top, bottom, left */
 .card2:nth-child(even)::before {
     left: 0px;
-    top: -5px;
-    bottom: -5px;
+    top: -0.3rem;
+    bottom: -0.3rem;
     border-width: 5px 0 5px 5px;
     border-radius: 50px 0 0 50px;
 }
@@ -234,6 +225,8 @@ body {
     border-width: 5px 5px 5px 0;
     border-radius: 0 50px 50px 0;
 }
+
+
 
 /* Removing the border if it is the last card  and it's even*/
 .card2:last-child:nth-child(even)::before {
@@ -264,10 +257,33 @@ body {
     
 /* setting dot to the left if the card is even */
 .card2:nth-child(even) > .info > .title::before {
-    left: -3rem;
+    left: -3.2rem;
 }
 
 /* setting dot to the right if the card is odd */
 .card2:nth-child(odd) > .info > .title::before {
-    right: -3rem;
+    right: -3.2rem;
+}
+
+/* Used when timelines stack */
+@media screen and (max-width: 703px){
+    .timeline {
+        margin: 0 auto;
+    }
+
+    /* Adding border if it is the last card and it's odd */
+    .card:last-child:nth-child(odd)::before {
+        border-bottom: 1;
+        border-bottom-left-radius: 1;
+        bottom: -37px;
+    }
+}
+
+/* Forces use when timelines don't stack */
+@media screen and (min-width: 704px){
+    /* Removing the border if it is the last card  and it's odd */
+    .card:last-child:nth-child(odd)::before {
+        border-bottom: 0;
+        border-bottom-left-radius: 0;
+    }
 }
