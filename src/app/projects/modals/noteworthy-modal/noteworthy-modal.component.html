@@ -1,0 +1,11 @@
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">NoteWorthy</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+        <video src="../../../../assets/NoteWorthy Final Video.mp4" controls></video>
+	</div>
+</ng-template>
+
+<button class="btn btn-md btn-dark" (click)="open(content)">Launch Video Demo</button>
