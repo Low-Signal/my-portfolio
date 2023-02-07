@@ -1,6 +1,8 @@
 
 .row {
     margin: auto;
+    position: relative;
+    z-index: 1 !important;
 }
 
 .outer {
@@ -226,8 +228,6 @@ body {
     border-radius: 0 50px 50px 0;
 }
 
-
-
 /* Removing the border if it is the last card  and it's even*/
 .card2:last-child:nth-child(even)::before {
     border-bottom: 0;
@@ -287,3 +287,4 @@ body {
         border-bottom-left-radius: 0;
     }
 }
+
