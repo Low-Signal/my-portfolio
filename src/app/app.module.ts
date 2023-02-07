@@ -12,6 +12,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { NoteworthyModalComponent } from './projects/modals/noteworthy-modal/noteworthy-modal.component';
+import { ShoppingcartModalComponent } from './projects/modals/shoppingcart-modal/shoppingcart-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { NoteworthyModalComponent } from './projects/modals/noteworthy-modal/not
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
-    NoteworthyModalComponent
+    NoteworthyModalComponent,
+    ShoppingcartModalComponent
   ],
   imports: [
     BrowserModule,
