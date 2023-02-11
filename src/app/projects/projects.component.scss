@@ -277,9 +277,10 @@ body {
         border-bottom-left-radius: 1;
         bottom: -37px;
     }
+
 }
 
-/* Forces use when timelines don't stack */
+/* Forces use when timelines doesn't stack */
 @media screen and (min-width: 704px){
     /* Removing the border if it is the last card  and it's odd */
     .card:last-child:nth-child(odd)::before {
