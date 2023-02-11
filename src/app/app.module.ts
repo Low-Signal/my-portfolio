@@ -13,6 +13,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { NoteworthyModalComponent } from './projects/modals/noteworthy-modal/noteworthy-modal.component';
 import { ShoppingcartModalComponent } from './projects/modals/shoppingcart-modal/shoppingcart-modal.component';
+import { SearchUmModalComponent } from './projects/modals/search-um-modal/search-um-modal.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ShoppingcartModalComponent } from './projects/modals/shoppingcart-modal
     ContactComponent,
     FooterComponent,
     NoteworthyModalComponent,
-    ShoppingcartModalComponent
+    ShoppingcartModalComponent,
+    SearchUmModalComponent
   ],
   imports: [
     BrowserModule,
