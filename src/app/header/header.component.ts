@@ -23,7 +23,14 @@ export class HeaderComponent {
   // Gets the scroll position and compares it to the page position then sets the correct page as active
   @HostListener('window:scroll', ['$event'])
   checkOffsetTop() { 
-    console.log(this.pageLocations.educationOffset);
+    //Scroll debugging
+    // console.log("Y", window.pageYOffset);
+    // console.log("aboutMe", this.pageLocations.aboutMeOffset);
+    // console.log("education", this.pageLocations.educationOffset);
+    // console.log("skill", this.pageLocations.skillsOffset);
+    // console.log("project", this.pageLocations.projectsOffset);
+    // console.log("contact", this.pageLocations.contactOffset);
+
 
     if (window.pageYOffset >= this.pageLocations.aboutMeOffset && window.pageYOffset < this.pageLocations.educationOffset) {
       this.currentActive = 1;

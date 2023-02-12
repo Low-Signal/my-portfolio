@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, ElementRef, AfterViewInit, OnInit, AfterContentInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -18,13 +18,26 @@ export class AppComponent implements AfterViewInit {
   @ViewChild('projects') projectsElement: ElementRef;
   @ViewChild('contact') contactElement: ElementRef;
 
+  @HostListener('window:resize', ['$event'])
+    onResize() {
+      this.pageLocations.aboutMeOffset = this.aboutMeElement.nativeElement.offsetTop;
+      this.pageLocations.educationOffset = this.educationElement.nativeElement.offsetTop;
+      this.pageLocations.skillsOffset = this.skillsElement.nativeElement.offsetTop;
+      this.pageLocations.projectsOffset = this.projectsElement.nativeElement.offsetTop;
+      this.pageLocations.contactOffset = this.contactElement.nativeElement.offsetTop;
+  }
+
   // Sets all page locations based on the Y value offset from top
   ngAfterViewInit() {
-    this.pageLocations.aboutMeOffset = this.aboutMeElement.nativeElement.offsetTop;
-    this.pageLocations.educationOffset = this.educationElement.nativeElement.offsetTop;
-    this.pageLocations.skillsOffset = this.skillsElement.nativeElement.offsetTop;
-    this.pageLocations.projectsOffset = this.projectsElement.nativeElement.offsetTop;
-    this.pageLocations.contactOffset = this.contactElement.nativeElement.offsetTop;
+
+    setTimeout( () => {
+      this.pageLocations.aboutMeOffset = this.aboutMeElement.nativeElement.offsetTop;
+      this.pageLocations.educationOffset = this.educationElement.nativeElement.offsetTop;
+      this.pageLocations.skillsOffset = this.skillsElement.nativeElement.offsetTop;
+      this.pageLocations.projectsOffset = this.projectsElement.nativeElement.offsetTop;
+      this.pageLocations.contactOffset = this.contactElement.nativeElement.offsetTop;
+    }, 1000 )
+
   }
 }
 
