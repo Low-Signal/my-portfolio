@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NoteworthyModalComponent } from './projects/modals/noteworthy-modal/noteworthy-modal.component';
 import { ShoppingcartModalComponent } from './projects/modals/shoppingcart-modal/shoppingcart-modal.component';
 import { SearchUmModalComponent } from './projects/modals/search-um-modal/search-um-modal.component';
+import { DrinkFinderModalComponent } from './projects/modals/drink-finder-modal/drink-finder-modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SearchUmModalComponent } from './projects/modals/search-um-modal/search
     FooterComponent,
     NoteworthyModalComponent,
     ShoppingcartModalComponent,
-    SearchUmModalComponent
+    SearchUmModalComponent,
+    DrinkFinderModalComponent
   ],
   imports: [
     BrowserModule,
