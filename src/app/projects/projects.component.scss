@@ -266,7 +266,7 @@ body {
 }
 
 /* Used when timelines stack */
-@media screen and (max-width: 703px){
+@media screen and (max-width: 720px){
     .timeline {
         margin: 0 auto;
     }
@@ -281,7 +281,7 @@ body {
 }
 
 /* Forces use when timelines doesn't stack */
-@media screen and (min-width: 704px){
+@media screen and (min-width: 721px){
     /* Removing the border if it is the last card  and it's odd */
     .card:last-child:nth-child(odd)::before {
         border-bottom: 0;
