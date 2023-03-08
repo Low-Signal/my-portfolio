@@ -6,13 +6,16 @@
             <input type="hidden" name="_captcha" value="false">
             <!-- <input type="hidden" name="_webhook" value="http://localhost:4200/"> -->
             <div class="row mx-auto">
-                <input type="text" name="name" placeholder="Your name goes here." required>
+                <input type="text" name="name" placeholder=" " required>
+                <span>Name</span>
             </div>
             <div class="row mx-auto">
-                <input type="email" name="email" placeholder="Your email goes here.">
+                <input title="email" type="email" name="email" placeholder=" ">
+                <span>Email</span>
             </div>
             <div class="row mx-auto">
-                <textarea type="message" name="message" placeholder="Write your message here." required></textarea>    
+                <textarea type="message" name="message" placeholder=" " required></textarea>
+                <span>Message</span>    
             </div>
             <div class="row mx-5 px-5">
                 <button class="button1" type="submit">Send</button>

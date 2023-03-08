@@ -29,6 +29,7 @@ h1 {
 .row {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    position:relative;
 }
 
 .button1 {
@@ -42,6 +43,42 @@ h1 {
     font-size: 16px;
     border-radius: 5px;
 }
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+span {
+    pointer-events: none;
+    position:absolute;
+    left: auto;
+    top: auto;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity:0.5;
+  }
+
+// Transitions span text above input box on focus and when the placeholder is not shown
+input:focus + span, input:not(:placeholder-shown) + span {
+    opacity:1;
+    font-size: 90%;
+    transform: translateY(-120%) translateX(-1%);
+}
+
+// Transitions span text above textarea on focus and when the placeholder is not shown
+textarea:focus + span, textarea:not(:placeholder-shown) + span {
+    opacity:1;
+    font-size: 85%;
+    transform: translateY(-120%) translateX(-1%);
+}
+
+
+
 
 @media screen and (max-width: 900px) {
     .contact-box {
